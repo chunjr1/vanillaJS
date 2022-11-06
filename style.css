@@ -1,0 +1,189 @@
+:root {
+    --main-border: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #525252;
+    min-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section {
+    width: 800px;
+    min-height: 800px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 30px;
+    box-shadow: 0 19px 38px rgba(227, 226, 235, 0.3), 0 15px 12px rgba(227, 226, 235, 0.2);
+    position: relative;
+    padding:35px 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    position:absolute;
+    width:100%;
+    height:100%;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+    opacity:50%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+li span {
+    margin-right: 10px;
+}
+
+header {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-form input {
+    padding: 14px;
+    width: 50%;
+    border: var(--main-border);
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+#login-form button {
+    background-color: tomato;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    margin-left: 20px;
+}
+.greeting-div {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 20px 0px;
+}
+
+#greeting {
+    margin-right: 10px;
+    font-size: 40px;
+    margin: 10px 0px;
+}
+
+#weather {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+#todo-form {
+    display: flex;
+    justify-content: center;
+}
+
+#todo-form input {
+    padding: 14px;
+    width: 50%;
+    border: var(--main-border);
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.todo-list-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 10px;
+    border-top: var(--main-border);
+    border-bottom: var(--main-border);
+}
+
+.todo-list-div li {
+    margin: 10px;
+}
+
+#todo-list {
+    margin: 5px;
+    width: 250px;
+    height: 300px;
+}
+
+.todo-list-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-list-title h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.7);
+}
+
+.todo-list-ul {
+    overflow: auto;
+}
+
+#done-list {
+    margin: 5px;
+    width: 250px;
+    height: 300px;
+}
+
+.done-list-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.done-list-title h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.7);
+}
+
+.done-list-ul {
+    overflow: auto;
+}
+
+footer {
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+    font-weight: 500;
+}
+
+footer span:first-child {
+    font-size: 20px;
+}
+
+footer span:last-child {
+    font-size: 15px;
+}
